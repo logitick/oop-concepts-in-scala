@@ -3,6 +3,7 @@
 ## Basics
 Expressions  
 Variables
+Types
 
 ## Classes
 Creating a class  
