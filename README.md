@@ -25,6 +25,40 @@ calc.make = "HP"
 calc.model = "some-model-123"
 ```
 ## Methods  
+Methods are defined using ``def``
+```scala
+class Calculator {
+  def hello():Unit = {
+      println("Hello")
+  }
+}
+
+new Calculator().hello() // output: Hello
+new Calculator().hello // output: Hello
+```
+The method ``hello``'s return type here is ``Unit`` which can be treated as an equivalent of ``void`` in java,c,c++
+
+To add parameters/arguments to our method, declare variables inside the parentheses omittin the ``var`` keyword.
+```scala
+class Calculator {
+  def hello(name:String):Unit = {
+      println("Hello, " + name)
+  }
+}
+
+new Calculator().hello("paul") // prints Hello, paul
+```
+
+Arithmetic operations are also methods
+```scala
+
+1 + 5  // plus here is a method of the class Int. This expression's result is 6
+1.+(5) // the method above is translated into this
+
+```
+In the last example the number 1 is an ``Int`` having the method ``+`` taking the number 5 as its parameter.
+
+
 ## Constructors  
 
 ## Encapsulation
