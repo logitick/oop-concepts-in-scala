@@ -64,6 +64,7 @@ class Calculator {
 
 new Calculator().hello // output: Hello
 ```
+### Returning values
 Scala will return the last statement inside of the method:
 ```scala
 class Calculator {
@@ -76,6 +77,9 @@ println(new Calculator().getPi) //3.14159265359
 ```
 In the example above, ``getPi``'s return type is ``Double``.
 
+... returning more than one values.. 
+
+### One-liners
 You can omit the braces for methods consisting only of one statement. The parenthesis can also be omitted if the method takes no arguments.
 ```scala
 class Calculator {
@@ -86,7 +90,7 @@ class Calculator {
 println(new Calculator().getPi) //3.14159265359
 new Calculator().hello // Hello
 ```
-
+### Parameters
 To add parameters/arguments to our method, declare variables inside the parentheses omittin the ``var`` keyword.
 ```scala
 class Calculator {
@@ -97,7 +101,9 @@ class Calculator {
 
 new Calculator().hello("paul") // prints Hello, paul
 ```
+... multiple params ...
 
+### Arithmetics as methods
 Arithmetic operations are also methods
 ```scala
 
