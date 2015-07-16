@@ -1,20 +1,20 @@
 # OOP Concepts in Scala
 
 ## Basics
-Expressions
+Expressions  
 Variables
 
 ## Classes
-Creating a class
-Fields
-Methods
-Constructors
+Creating a class  
+Fields  
+Methods  
+Constructors  
 
 ## Encapsulation
 Encapsulating fields and methods
 
 ## Abstraction
-Creating abstract classes
+Creating abstract classes  
 Traits
 
 ## Inheritance
