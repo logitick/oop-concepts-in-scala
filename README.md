@@ -64,6 +64,28 @@ class Calculator {
 
 new Calculator().hello // output: Hello
 ```
+Scala will return the last statement inside of the method:
+```scala
+class Calculator {
+  def getPi() = {
+      3.14159265359
+  }
+}
+
+println(new Calculator().getPi) //3.14159265359
+```
+In the example above, ``getPi``'s return type is ``Double``.
+
+You can omit the braces for methods consisting only of one statement. The parenthesis can also be omitted if the method takes no arguments.
+```scala
+class Calculator {
+  def getPi() = 3.14159265359
+  def hello = println("Hello")
+}
+
+println(new Calculator().getPi) //3.14159265359
+new Calculator().hello // Hello
+```
 
 To add parameters/arguments to our method, declare variables inside the parentheses omittin the ``var`` keyword.
 ```scala
