@@ -11,6 +11,11 @@ Creating a class in Scala uses the ``class`` keyword followed by the class name 
 ```scala 
 class Calculator {}
 ```
+To create an instance of this class, we use the ``new`` keyword.
+```scala
+new Calculator()
+new Calculator // we can also emit the parentheses
+```
 ## Fields  
 ```scala 
 class Calculator {
