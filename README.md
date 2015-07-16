@@ -23,12 +23,23 @@ class Calculator {
   var model = "" // leaving off the type is allowed because it is inferred by Scala
 }
 ```
-Scala actually automatically generates accessors and mutators for your fields.
+To access the fields:
 ```scala
-var calc = new Calculator // type is also inferred here
+var calc:Calculator = new Calculator
 calc.make = "HP"
 calc.model = "some-model-123"
+println(calc.make) // HP
+println(calc.model) // some-model-123
+
+var calc2 = new Calculator // notice that the type is omitted.
+calc2.make = "HP"
+calc2.model = "some-model-123"
+println(calc2.make)
+println(calc2.model)
+
 ```
+
+
 ## Methods  
 Methods are defined using ``def``
 ```scala
@@ -42,6 +53,17 @@ new Calculator().hello() // output: Hello
 new Calculator().hello // output: Hello
 ```
 The method ``hello``'s return type here is ``Unit`` which can be treated as an equivalent of ``void`` in java,c,c++
+
+We may also have scala infer the type of our method:
+```scala
+class Calculator {
+  def hello() = {
+      println("Hello")
+  }
+}
+
+new Calculator().hello // output: Hello
+```
 
 To add parameters/arguments to our method, declare variables inside the parentheses omittin the ``var`` keyword.
 ```scala
