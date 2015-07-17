@@ -77,7 +77,16 @@ println(new Calculator().getPi) //3.14159265359
 ```
 In the example above, ``getPi``'s return type is ``Double``.
 
-... returning more than one values.. 
+Scala also allows returning multiple values from a method
+```scala
+class Calculator {
+  def getNumbers() = {
+      (3.14159265359, 2.7182818284)
+  }
+}
+
+println(new Calculator().getNumbers) // returns (3.14159265359,2.7182818284)
+```
 
 ### One-liners
 You can omit the braces for methods consisting only of one statement. The parenthesis can also be omitted if the method takes no arguments.
