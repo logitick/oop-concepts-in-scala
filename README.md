@@ -109,9 +109,27 @@ class Calculator {
 }
 
 new Calculator().hello("paul") // prints Hello, paul
-```
-... multiple params ...
+```   
+To use multiple parameters, you may add a comma in between them.
+```scala
+class Calculator {
+  def hello(firstName:String, lastName: String) = {
+      println("Hello, " + firstName + " " + lastName)
+  }
+}
 
+new Calculator().hello("Paul Daniel", "Iway") // prints Hello, Paul Daniel Iway
+```
+Scala supports named paramters
+```
+class Calculator {
+  def hello(firstName:String, lastName: String) = {
+      println("Hello, " + firstName + " " + lastName)
+  }
+}
+
+new Calculator().hello(lastName ="Iway", firstName = "Paul Daniel") // prints Hello, Paul Daniel Iway
+```
 ### Arithmetics as methods
 Arithmetic operations are also methods
 ```scala
